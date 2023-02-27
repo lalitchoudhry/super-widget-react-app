@@ -1,0 +1,118 @@
+.container{                         /*Whole Register Area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #FFFFFF;
+    width: 50%;
+    height: 100vh;
+}
+
+.logo_text{                          /* Brand Logo Area */
+    text-align: center;
+}
+.logo_text h2{
+    color: #72DB73;
+    font-size: 3.2rem;
+    margin: .3em 0;
+    font-family: 'Single Day', cursive;
+}
+.logo_text p{
+    font-size: 1.1rem;
+    line-height: 139.69%;
+    font-weight: 400;
+}
+
+.mail_signup{                       /* Email || Google SignUp Area */
+    margin: 1em 0;
+}
+.mail_signup a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    padding: 0 .5em;
+}
+
+form{                               /* Form Area */
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    width: 55%;
+}
+.input_box{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 1rem;
+    padding: .8em .5em;
+    border-radius: 3.8px;
+    color: #7C7C7C;
+    background-color: #292929;
+    border: none;
+}
+span{
+    font-size: .85rem;
+    margin: 0 0 .5em 0;
+    color: red;
+    visibility: hidden;
+}
+
+.checkBox{   /* ----------- Check Box Area */
+    margin: .3em 0 0 0;
+    color: #7C7C7C;
+    font-size: .9rem;
+    display: flex;
+}
+
+form button{ /* ----------- Submit Button */
+    padding: .5em;
+    margin: .4em 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 108.69%;
+    background-color: #72DB73;
+    color: #FFFFFF;
+    border-radius: 23px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input:invalid[focused = 'true'] ~ span{ /* ------ Logic Area For Error */
+    visibility: visible;
+}
+.error{
+    visibility: visible;
+}
+.span{
+    visibility: hidden;
+}
+
+.term_conditions{                    /* Term Condition Area */
+    width: 50%;
+}
+.term_conditions p{
+    margin: 1em 0;
+    color: #7C7C7C;
+    font-size: .8rem;
+}
+.term_conditions a{
+    text-decoration: none;
+    color: #72DB73;
+}
+
+/* --------------- ----------- Media Query For Responsive Design ------------- -------------*/
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+}

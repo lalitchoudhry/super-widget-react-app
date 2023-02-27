@@ -1,0 +1,41 @@
+.container{
+  background: url('./../../Images/leftbanner.jpg') no-repeat center center / cover;
+  color: #FFF;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100vh;
+}
+
+.login{
+   font-size: 2rem;
+   margin: .9em;
+   display: flex;
+   align-items: center;
+}
+.login button{
+    background-color: #72DB73;
+    border-radius: 33px;
+    padding: .6em 1.6em;
+    margin: 0 .4em 0 1em;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.banner_text{
+    font-size: 3.29rem;
+    font-weight: 900;
+    width: 70%;
+    margin: 0 0 0 0.5em;
+}
+
+/* --------------- ----------- Media Query For Responsive Design ------------- -------------*/
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+}
