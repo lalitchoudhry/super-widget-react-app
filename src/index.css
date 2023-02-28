@@ -10,3 +10,39 @@
     font-size: 13.7px;
   }
 }
+
+.Action{
+  background-color: #FF5209;
+}
+
+.Drama {
+  background-color:#D7A4FF;
+}
+
+.Romance {
+  background-color:#148A08;
+}
+
+.Thriller {
+  background-color: #84C2FF;
+}
+
+.Western {
+  background-color: #902500;
+}
+
+.Horror {
+  background-color: #7358FF;
+}
+
+.Fantasy {
+  background-color: #FF4ADE;
+}
+
+.Music {
+  background-color: #E61E32;
+}
+
+.Fiction {
+  background-color: #6CD061;
+}

@@ -1,0 +1,29 @@
+.chip_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+    margin: 1em;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.chip_box:hover, .chip_box:focus {
+    border: 2px solid white;
+}
+
+h5 {
+    font-size: 1.29rem;
+    margin: .2em;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.chip_box img {
+    width: 130px;
+    border-radius: 11px;
+    border: 1px solid ;
+}
