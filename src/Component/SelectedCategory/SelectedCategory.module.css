@@ -1,12 +1,12 @@
 .selected_card{
     background-color: green;
     color: #FFFFFF;
-    padding: .5em 1em;
+    padding: .4em 1em;
     /* height: 35px; */
-    width: 110px;
+    /* width: 110px; */
     text-align: center;
     border-radius: 30px;
-    margin: .5em .7em;
+    margin: .4em .6em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,6 +15,7 @@
 button{
     background: none;
     border: none;
+    margin: 0 0 0 .5em;
     font-size: 1rem;
     font-weight: 500;
     color: rgb(169, 168, 168);

@@ -10,6 +10,7 @@ let nextId = 0;
 export default function Category() {
 
     const [seltedCategory, setSeltedCategory] = useState([]);
+    const [chips, setChips] = useState(categoryChips);
 
     function isPresent(type) {
         for (const value in seltedCategory) {
@@ -23,6 +24,7 @@ export default function Category() {
     }
 
     function selectCategory(type) {
+
         if (isPresent(type)) {
             setSeltedCategory(
                 seltedCategory.filter(e =>
@@ -30,11 +32,29 @@ export default function Category() {
                 )
             )
         } else {
-
+            
             setSeltedCategory([...seltedCategory, { id: nextId++, type: type }])
         }
+        setChips(
+            chips.map((chip) =>
+              chip.type === type
+                ? { ...chip, selected: !chip.selected }
+                : chip
+            )
+          );
     }
     console.log(seltedCategory);
+
+    function onClickNext(){
+        let selectedCategoty = seltedCategory.map((e)=>e.type)
+
+        if (selectedCategoty.length === 0) {
+            alert('Please Select any Category')
+            return
+        }
+        alert('THANKS')
+        localStorage.setItem('selectedCategory', JSON.stringify(selectedCategoty))
+    }
 
     return (
         <div className={styles.container}>
@@ -50,8 +70,18 @@ export default function Category() {
                 </div>
             </div>
             <div className={styles.category_box}>
-                {categoryChips.map((chip) => <CategoryChips key={chip.id} {...chip} selectCategory={selectCategory} />)}
+                {chips.map((chip) => 
+                    <CategoryChips 
+                        key={chip.id} 
+                        {...chip} 
+                        selectCategory={selectCategory}
+                    />)}
             </div>
+            <button 
+                className={styles.next_btn} 
+                onClick={onClickNext}>
+                    Next
+            </button>
         </div>
     )
 }

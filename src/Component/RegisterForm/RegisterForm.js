@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Input from './Input';
 import styles from './RegisterForm.module.css';
 import inputList from './inputData';
 
 export default function RegisterForm() {
+
+  const navigate = useNavigate();
 
   const [isChecked, setIsChecked] = useState(false) // for check box input to change its class according
 
@@ -41,6 +44,7 @@ export default function RegisterForm() {
       return;
     }
     setError('false');
+    navigate('/category');
   }
 
   return (

@@ -1,22 +1,30 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: black;
+}
+
 .container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: black;
 }
 
 
 .text_box{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 70%;
     width: 30%;
 }
-.text{
-    align-self: flex-start;
-}
+
 .text_box h2{
     margin: .8em 0;
     font-size: 2.5rem;
@@ -32,12 +40,58 @@
 }
 
 .selted_box{
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .category_box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 40%;
+    gap: 15px;
+}
+
+.next_btn{
+    padding: .4em 1.5em;
+    background-color: #72DB73;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    border-radius: 21px;
+    position: fixed;
+    bottom: 2%;
+    right: 4%;
+}
+
+@media screen and (max-width: 1195px){
+    .category_box{
+        width: 50%;
+    }
+    .text_box{
+        height: 70%;
+        width: 35%;
+    }
+}
+@media screen and (max-width: 768px){
+    .category_box{
+        width: 100%;
+        align-items: center;
+    }
+
+    .text_box{
+        text-align: center;
+        height: 30%;
+        width: 100%;
+    }
+
+    .text_box p{
+        margin: 0;
+    }
+    html{
+        font-size: 10px;
+    }
+
 }
