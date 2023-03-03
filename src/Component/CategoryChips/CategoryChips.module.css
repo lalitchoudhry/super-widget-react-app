@@ -20,8 +20,8 @@
 }
 
 h5 {
-    font-size: 1.29rem;
-    margin: .2em 0 0 0;
+    font-size: 1.2rem;
+    margin: .3em 0 0 0;
     color: #FFFFFF;
     font-weight: 600;
     letter-spacing: 2px;
@@ -31,7 +31,7 @@ h5 {
     width: 130px;
     border-radius: 11px;
     border: 1px solid ;
-    margin: .5em;
+    margin: .7em;
 }
 
 @media screen and (max-width: 955px){

@@ -4,10 +4,13 @@ import categoryChips from '../../Component/CategoryChips/CategoryChipsData';
 import CategoryChips from '../../Component/CategoryChips/CategoryChips';
 import SelectedCategory from '../../Component/SelectedCategory/SelectedCategory';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 let nextId = 0;
 
 export default function Category() {
+
+    const navigate = useNavigate();
 
     const [seltedCategory, setSeltedCategory] = useState([]);
     const [chips, setChips] = useState(categoryChips);
@@ -46,14 +49,15 @@ export default function Category() {
     console.log(seltedCategory);
 
     function onClickNext(){
-        let selectedCategoty = seltedCategory.map((e)=>e.type)
+        let selectedCategoty = seltedCategory.map((e)=>e)
 
         if (selectedCategoty.length === 0) {
             alert('Please Select any Category')
             return
         }
-        alert('THANKS')
         localStorage.setItem('selectedCategory', JSON.stringify(selectedCategoty))
+        navigate('/home');
+        
     }
 
     return (

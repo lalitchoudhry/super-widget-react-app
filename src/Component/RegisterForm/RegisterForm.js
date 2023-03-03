@@ -44,6 +44,7 @@ export default function RegisterForm() {
       return;
     }
     setError('false');
+    localStorage.setItem('userDetail', JSON.stringify(inputs))
     navigate('/category');
   }
 
