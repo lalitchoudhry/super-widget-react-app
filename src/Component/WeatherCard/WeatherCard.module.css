@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    width: 700px;
+    border-radius: 33px;
+}
+
+.date_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#FF4ADE;
+    font-size: 2rem;
+    padding: .5em 0;
+    border-radius: 33px 33px 0 0;
+}
+
+.weather_box{
+    border-radius: 0 0 33px 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#101744;
+}
+
+.info_box h1{
+    font-size: 3.3rem;
+    font-weight: 100;
+}
+.info_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: .3em;
+    font-size: 1.2rem;
+}
+.info p{
+    margin: .5em;
+}
+
+i{
+    font-size: 1.5rem;
+}

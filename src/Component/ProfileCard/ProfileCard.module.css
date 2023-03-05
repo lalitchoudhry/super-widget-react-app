@@ -4,6 +4,7 @@
     background-color:#5746EA;
     display: flex;
     justify-content: space-evenly;
+    border-radius: 33px;
 }
 
 .profile_box{
@@ -18,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin: 1em;
 }
 .name{
     font-size: 1.5rem;
