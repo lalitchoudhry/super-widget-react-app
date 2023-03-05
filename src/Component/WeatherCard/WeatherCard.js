@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styles from './WeatherCard.module.css';
 import local from '../../config';
 
-export default function WeatherCard() {
+export default function WeatherCard(props) {
 
     const [weather, setWeather] = useState()
-    const [time, setTime] = useState('')
 
     useEffect(() => {
 
@@ -16,19 +15,7 @@ export default function WeatherCard() {
 
             setWeather(res);
         }
-        const getTime = () => {
-            const time = {
-                date: new Date().getDate(),
-                month: new Date().getMonth() + 1,
-                year: new Date().getFullYear(),
-
-                hour: new Date().toLocaleString([], { hour: 'numeric', minute: 'numeric', hour12: true })
-            }
-            setTime(time)
-        }
-
         fetchWeather();
-        getTime();
 
     }, [])
     console.log(weather)
@@ -36,8 +23,8 @@ export default function WeatherCard() {
     return (
         <div className={styles.container}>
             <div className={styles.date_box}>
-                <div>{time.month}-{time.date}-{time.year}</div>
-                <div>{time.hour}</div>
+                <div>{props.time.month}-{props.time.date}-{props.time.year}</div>
+                <div>{props.time.hour}</div>
             </div>
             <div className={styles.weather_box}>
                 <div className={styles.info_box}>
