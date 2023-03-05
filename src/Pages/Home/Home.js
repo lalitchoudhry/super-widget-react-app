@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import NewsCard from '../../Component/NewsCard/NewsCard'
 import ProfileCard from '../../Component/ProfileCard/ProfileCard'
 import WeatherCard from '../../Component/WeatherCard/WeatherCard'
+import NoteCard from '../../Component/NoteCard/NoteCard'
 
 export default function Home() {
 
@@ -30,6 +31,7 @@ export default function Home() {
         <ProfileCard />
         <WeatherCard time={time}/>
       </div>
+      <NoteCard />
       <NewsCard time={time}/>
     </div>
   )
