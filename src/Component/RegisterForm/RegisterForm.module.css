@@ -43,7 +43,7 @@ form{                               /* Form Area */
     display: flex;
     flex-direction: column;
 }
-input{
+.input_box input{
     font-size: 1rem;
     padding: .8em .5em;
     border-radius: 3.8px;
@@ -51,7 +51,7 @@ input{
     background-color: #292929;
     border: none;
 }
-span{
+.input_box span{
     font-size: .85rem;
     margin: 0 0 .5em 0;
     color: red;
@@ -65,7 +65,7 @@ span{
     display: flex;
 }
 
-form button{ /* ----------- Submit Button */
+.container form button{ /* ----------- Submit Button */
     padding: .5em;
     margin: .4em 0;
     font-size: 1.35rem;
@@ -78,8 +78,8 @@ form button{ /* ----------- Submit Button */
     border: none;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+.input_box input[type=number]::-webkit-inner-spin-button, 
+.input_box input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

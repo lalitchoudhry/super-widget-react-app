@@ -1,14 +1,15 @@
 .container{
-    height: 400px;
-    width: 700px;
+    /* height: 50%; */
     background-color:#5746EA;
     display: flex;
     justify-content: space-evenly;
     border-radius: 33px;
+    margin: .5em;
 }
 
 .profile_box{
-    width: 35%;
+    width: 16vw;
+    height: 35vh;
     border: 5px solid #FFF;
     border-radius: 135px;
     background-image: url('https://i.pinimg.com/236x/a8/c4/1d/a8c41d4a48db08e83547a34127a03174.jpg');
@@ -22,14 +23,14 @@
     margin: 1em;
 }
 .name{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .email{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
 }
 .username{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 

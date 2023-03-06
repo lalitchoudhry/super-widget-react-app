@@ -1,18 +1,13 @@
 .container{
-    width: 25%;
     background-color:#F1C75B;
     color: black;
     border-radius: 33px;
     padding: 2em;
+    flex: 1;
+    margin: .5em;
 }
 
-input{
-    background-color: #F1C75B;
-    border: none;
-    width: 100%;
-}
-
-textarea{
+.container textarea{
     background-color: #F1C75B;
     border: none;
     resize: none;
@@ -22,7 +17,7 @@ textarea{
     line-height: 35px;
     padding: 1em 0;
 }
-textarea:focus{
+.container textarea:focus{
     outline: none;
 }
 
@@ -30,11 +25,11 @@ textarea:focus{
     width: 100%;
     text-align: end
 }
-button{
+.button button{
     background-color: black;
     padding: 1em 1.2em;
     border-radius: 33px;
 }
-i{
+.button i{
     color: white;
 }

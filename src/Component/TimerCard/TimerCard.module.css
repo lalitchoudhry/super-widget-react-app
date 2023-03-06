@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#1E2343;
+    border-radius: 33px;
+    flex: 1;
+    margin: .5em;
+}
+
+.display_countdown{
+    font-size: 2rem;
+}
+
+.set_countdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: .5em;
+}
+
+.set_number{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-size: 2rem;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.number p{
+    color: #949494;
+    font-size: .8rem;
+}
+
+.number span{
+    /* font-size: 2rem; */
+    font-weight: 100;
+}
+
+.start_btn{
+    background-color: #FF6A6A;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0;
+    padding: .8em;
+    border-radius: 33px;
+}
+
+.number button{
+    margin: 0;
+}

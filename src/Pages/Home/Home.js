@@ -4,6 +4,7 @@ import NewsCard from '../../Component/NewsCard/NewsCard'
 import ProfileCard from '../../Component/ProfileCard/ProfileCard'
 import WeatherCard from '../../Component/WeatherCard/WeatherCard'
 import NoteCard from '../../Component/NoteCard/NoteCard'
+import TimerCard from '../../Component/TimerCard/TimerCard'
 
 export default function Home() {
 
@@ -27,12 +28,15 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div>
-        <ProfileCard />
-        <WeatherCard time={time}/>
+      <div className={styles.profile_3_box}>
+        <div className={styles.profile_weather_box}>
+          <ProfileCard />
+          <WeatherCard time={time} />
+        </div>
+        <NoteCard />
+        <TimerCard />
       </div>
-      <NoteCard />
-      <NewsCard time={time}/>
+      <NewsCard time={time} />
     </div>
   )
 }

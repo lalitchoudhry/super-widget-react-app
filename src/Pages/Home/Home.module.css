@@ -1,5 +1,29 @@
 .container{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.profile_weather_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_3_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-shrink: 1;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .profile_3_box{
+        width: 100%;
+    }
 }

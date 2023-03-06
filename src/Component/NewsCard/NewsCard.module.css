@@ -1,8 +1,10 @@
 .container{
     background-color: #FFFFFF;
     color: black;
-    width: 25%;
+    min-width: 280px;
     border-radius: 33px;
+    margin: .5em;
+    flex: 1;
 }
 
 .img_box{
