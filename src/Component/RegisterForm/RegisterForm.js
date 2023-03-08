@@ -22,7 +22,6 @@ export default function RegisterForm() {
 
   function onChange(e) {  // function that update given input after submit
     setInputs({ ...inputs, [e.target.name]: e.target.value })
-    console.log(inputs);
   }
 
   const handleCheckBox = (e)=>{
@@ -31,11 +30,10 @@ export default function RegisterForm() {
   }
 
   const handleClickSubmit = () => { // checked that input has value or not
-    console.log("Run")
+  
     for (const value in inputs) {
       if (inputs[value].length === 0) {
         setError('true');
-        console.log("Enter click")
         return;
       }
     }

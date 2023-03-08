@@ -22,7 +22,6 @@ export default function Category() {
                 return true;
             }
         }
-        console.log('end')
         return false;
     }
 
@@ -46,7 +45,6 @@ export default function Category() {
             )
           );
     }
-    console.log(seltedCategory);
 
     function onClickNext(){
         let selectedCategoty = seltedCategory.map((e)=>e)

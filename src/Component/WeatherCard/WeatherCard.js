@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './WeatherCard.module.css';
-import local from '../../config';
+import config from '../../config';
 
 export default function WeatherCard(props) {
 
@@ -8,17 +8,27 @@ export default function WeatherCard(props) {
 
     useEffect(() => {
 
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=balaghat&units=metric&appid=${local.weatherKey}`;
+        let lat = 0;
+        let lon = 0
+        
+        navigator.geolocation.getCurrentPosition(function(location) {
+            lat = (location.coords.latitude);
+            lon = (location.coords.longitude);
+            
+            let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${config.weatherKey}`;
+    
+            console.log(lat, lon)
+            const fetchWeather = async () => {
+                const res = await fetch(url).then(async (data) => await data.json())
+    
+                setWeather(res);
+            }
+            fetchWeather();
+          });
 
-        const fetchWeather = async () => {
-            const res = await fetch(url).then(async (data) => await data.json())
 
-            setWeather(res);
-        }
-        fetchWeather();
 
     }, [])
-    console.log(weather)
 
     return (
         <div className={styles.container}>

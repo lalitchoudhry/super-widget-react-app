@@ -5,11 +5,17 @@ import ProfileCard from '../../Component/ProfileCard/ProfileCard'
 import WeatherCard from '../../Component/WeatherCard/WeatherCard'
 import NoteCard from '../../Component/NoteCard/NoteCard'
 import TimerCard from '../../Component/TimerCard/TimerCard'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
 
+  const navigate = useNavigate();
 
   const [time, setTime] = useState('')
+
+  const toggleBrowse = ()=>{
+    navigate('/browse');
+  }
 
   useEffect(() => {
 
@@ -37,6 +43,7 @@ export default function Home() {
         <TimerCard />
       </div>
       <NewsCard time={time} />
+      <button className={styles.toggle_btn} onClick={toggleBrowse}>Browse</button>
     </div>
   )
 }

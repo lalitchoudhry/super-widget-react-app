@@ -43,7 +43,7 @@ form{                               /* Form Area */
     display: flex;
     flex-direction: column;
 }
-.input_box input{
+input{
     font-size: 1rem;
     padding: .8em .5em;
     border-radius: 3.8px;
@@ -51,7 +51,7 @@ form{                               /* Form Area */
     background-color: #292929;
     border: none;
 }
-.input_box span{
+form span{
     font-size: .85rem;
     margin: 0 0 .5em 0;
     color: red;
@@ -78,8 +78,8 @@ form{                               /* Form Area */
     border: none;
 }
 
-.input_box input[type=number]::-webkit-inner-spin-button, 
-.input_box input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

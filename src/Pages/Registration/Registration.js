@@ -4,7 +4,6 @@ import RegisterForm from '../../Component/RegisterForm/RegisterForm';
 import styles from './Registration.module.css'
 
 function Registration() {
-  console.log(typeof(React.useRef()))
   return (
     <div className={styles.container}>
         <LeftBanner />

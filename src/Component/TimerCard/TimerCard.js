@@ -63,8 +63,6 @@ export default function TimerCard() {
         clearTimer(getDeadTime(totalSecond));
     }
 
-    console.log('run')
-
     return (
         <div className={styles.container}>
             <div className={styles.display_countdown}>

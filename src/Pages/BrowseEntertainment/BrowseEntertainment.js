@@ -13,7 +13,7 @@ export default function BrowseEntertainment() {
   const [action, setAction] = useState()
 
   const toggleHome = ()=>{
-    navigate('home')
+    navigate('/home')
   }
 
   useEffect(() => {

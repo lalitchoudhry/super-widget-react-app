@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NewsCard.module.css';
+import config from './../../config'
 
 export default function NewsCard(props) {
 
@@ -7,7 +8,7 @@ export default function NewsCard(props) {
 
   useEffect(() => {
 
-    const url = 'https://newsapi.org/v2/everything?q=anime&apiKey=cc6120b1af3c44499c9ddd6e1d45d074'
+    const url = `https://newsapi.org/v2/everything?q=anime&apiKey=${config.newsKey}`
     const fetchNews = async () => {
       const res = await fetch(url).then(async (data) => await data.json())
       setNews(res);
@@ -15,18 +16,17 @@ export default function NewsCard(props) {
 
     fetchNews();
   }, [])
-  console.log(news);
 
   return (
     <div className={styles.container}>
-      <div className={styles.img_box} style={{ backgroundImage: `url("${news && news.articles[0].urlToImage}")` }}>
+      <div className={styles.img_box} style={{ backgroundImage: `url("${news && news.articles[10].urlToImage}")` }}>
         <div className={styles.title_box}>
-          <h2>{news && news.articles[0].title}</h2>
+          <h2>{news && news.articles[10].title}</h2>
           <div className={styles.date_box}>{props.time.month}-{props.time.date}-{props.time.year} | {props.time.hour}
           </div>
         </div>
       </div>
-      <p>{news && news.articles[0].description}</p>
+      <p>{news && news.articles[10].description}</p>
     </div>
   )
 }
