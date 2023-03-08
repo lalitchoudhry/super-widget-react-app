@@ -8,8 +8,12 @@
 # testing
 /coverage
 
+# local files
+.config.js
+
 # production
 /build
+.gitignore
 
 # misc
 .DS_Store
