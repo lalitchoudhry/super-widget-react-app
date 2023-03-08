@@ -3,13 +3,41 @@
     align-items: center;
     justify-content: space-around;
     background-color:#1E2343;
-    border-radius: 33px;
+    border-radius: 19px;
     flex: 1;
     margin: .5em;
 }
 
 .display_countdown{
     font-size: 2rem;
+    background-color:#191E39;
+    width: 180px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 233px;
+    box-shadow: -3px -7px 16px rgba(95, 88, 88, 0.23), inset 0px 6px 26px rgba(0, 0, 0, 0.61);
+}
+
+.mid_circle{
+    background-color: #FF6A6A;
+    width: 85%;
+    height: 85%;
+    border-radius: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer_circle{
+    background-color: #191E39;
+    width: 95%;
+    height: 95%;
+    border-radius: 233px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .set_countdown{
@@ -57,4 +85,13 @@
 
 .number button{
     margin: 0;
+}
+
+@media screen and (max-width: 375px){
+    .set_number{
+        gap: 10%;
+    }
+    .display_countdown{
+        width: 120px;
+    }
 }

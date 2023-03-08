@@ -9,6 +9,7 @@
 .profile_weather_box{
     display: flex;
     flex-direction: column;
+    width: 73%;
 }
 
 .profile_3_box{
@@ -18,6 +19,11 @@
     flex-shrink: 1;
 }
 
+@media screen and (max-width: 800px){
+    .profile_weather_box{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 600px){
     .container{
         flex-wrap: wrap;

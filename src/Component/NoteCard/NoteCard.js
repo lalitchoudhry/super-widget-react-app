@@ -33,7 +33,7 @@ export default function NoteCard() {
     <div className={styles.container}>
         <h1>All notes</h1>
         <textarea value={note} onChange={handleChange} />
-        <div className={styles.button}><button><i class="bi bi-pencil"></i></button></div>
+        <div className={styles.button}><button><i className="bi bi-pencil"></i></button></div>
     </div>
   )
 }
