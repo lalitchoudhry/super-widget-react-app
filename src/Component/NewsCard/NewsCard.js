@@ -10,8 +10,10 @@ export default function NewsCard(props) {
 
     const url = `https://newsapi.org/v2/everything?q=anime&apiKey=${config.newsKey}`
     const fetchNews = async () => {
-      const res = await fetch(url).then(async (data) => await data.json())
-      setNews(res);
+      const res = await fetch(url).then(async (data) => await data.json()).catch((error)=>console.error(error))
+      if (res.status === 'ok') {
+        setNews(res);
+      }
     }
 
     fetchNews();

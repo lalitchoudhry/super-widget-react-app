@@ -25,19 +25,29 @@ export default function BrowseEntertainment() {
         .then(async response => await response.json())
         .catch(err => console.error(err));
 
-      setAnimation(animeRes);
+        if (animeRes.page > 0) {
+        
+          setAnimation(animeRes);
+        }
+
 
       const horrorRes = await fetch(`${url}&with_genres=27`)
         .then(async response => await response.json())
         .catch(err => console.error(err));
 
-      setHorror(horrorRes);
+        if (horrorRes.page>0) {
+          
+          setHorror(horrorRes);
+        }
 
       const actionRes = await fetch(`${url}&with_genres=28`)
         .then(async response => await response.json())
         .catch(err => console.error(err));
 
-      setAction(actionRes);
+        if (actionRes.page>0) {
+          
+          setAction(actionRes);
+        }
     }
     fetchMovies();
   }, [])

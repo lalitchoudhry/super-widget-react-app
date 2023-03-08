@@ -8,14 +8,28 @@ export default function WeatherCard(props) {
 
     useEffect(() => {
 
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=mumbai&units=metric&appid=${config.weatherKey}`;
+        let lat = 0;
+        let lon = 0;
 
-        const fetchWeather = async () => {
-            const res = await fetch(url).then(async (data) => await data.json())
+        navigator.geolocation.getCurrentPosition(function(location) {
+            lat = (location.coords.latitude);
+            lon = (location.coords.longitude);
 
-            setWeather(res);
-        }
-        fetchWeather();
+            let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${config.weatherKey}`;
+    
+            const fetchWeather = async () => {
+                const res = await fetch(url)
+                .then(async (data) => await data.json())
+                .catch((error=>console.error(error)))
+    
+                if (res.cod === 200) {
+                    
+                    setWeather(res);
+                }
+            }
+            fetchWeather();
+          });
+
 
     }, [])
 

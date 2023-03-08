@@ -9,11 +9,11 @@
 /coverage
 
 # local files
-.config.js
+config.js
 
 # production
 /build
-.gitignore
+gitignore
 
 # misc
 .DS_Store
