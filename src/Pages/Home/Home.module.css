@@ -20,12 +20,12 @@
 }
 
 .toggle_btn{
-    padding: .7em 2em;
+    padding: 1em 2.2em;
     color: #fff;
     background-color: #148A08;
     border: 1px solid ;
     border-radius: 32px;
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     right: 3%;
 }

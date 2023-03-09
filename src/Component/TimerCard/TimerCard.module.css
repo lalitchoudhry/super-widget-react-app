@@ -12,7 +12,7 @@
     font-size: 2rem;
     background-color:#191E39;
     width: 180px;
-    height: 85%;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,5 +93,6 @@
     }
     .display_countdown{
         width: 120px;
+        height: 120px;
     }
 }

@@ -30,8 +30,8 @@ export default function WeatherCard(props) {
             fetchWeather();
           });
 
-
     }, [])
+    console.log(weather)
 
     return (
         <div className={styles.container}>

@@ -1,9 +1,9 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin: .2em 0;
+    margin: .4em 0;
 }
 
 .container img{
-    width: 12em;
+    width: 9.8em;
 }

@@ -90,8 +90,9 @@ body {
     .text_box p{
         margin: 0;
     }
-    html{
-        font-size: 10px;
+}
+@media screen and (max-width: 425px){
+    .text_box p{
+        font-size: 2rem;
     }
-
 }

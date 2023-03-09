@@ -9,7 +9,7 @@
 /coverage
 
 # local files
-config.js
+src/config.js
 
 # production
 /build

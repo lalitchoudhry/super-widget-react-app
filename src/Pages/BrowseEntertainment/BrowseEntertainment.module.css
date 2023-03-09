@@ -12,7 +12,7 @@
 .toggle_btn{
     background-color: #72DB73;
     padding: 2em;
-    position: absolute;
+    position: fixed;
     top: 5%;
     right: 2%;
     border-radius: 40px;
@@ -33,7 +33,7 @@
     margin: 1.5em 0;
 }
 .category_box h1{
-    font-size: 1.125rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     color:#878787;
 }
