@@ -22,7 +22,8 @@ It is a react web app that provide many widgets like Note taking card, Weather i
 
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://github.com/lalitchoudhry/super-widget-react-app/blob/master/src/Images/screenshot-2.png)
+![App Screenshot](https://github.com/lalitchoudhry/super-widget-react-app/blob/master/src/Images/Screenshot%202024-03-02%20154503.png)
 
 
 ## Author
