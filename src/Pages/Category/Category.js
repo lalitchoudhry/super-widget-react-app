@@ -18,7 +18,6 @@ export default function Category() {
     function isPresent(type) {
         for (const value in seltedCategory) {
             if (seltedCategory[value].type === type) {
-                console.log("Enter click")
                 return true;
             }
         }
